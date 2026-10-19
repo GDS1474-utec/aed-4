@@ -1,0 +1,24 @@
+Soluciones en C++ - ejercicios A, B y C
+
+A.cpp - Teclado del celular
+  Backtracking para generar palabras en orden alfabetico.
+  Complejidad: O(n * k), donde k es el numero de palabras.
+
+B.cpp - Camisetas Libres
+  Arbol AVL basado en plantilla_avl.cpp, con los numeros libres.
+  Se mantienen las frecuencias para admitir camisetas repetidas.
+  El AVL almacena los numeros libres de 0 a q; siempre existe uno.
+  Complejidad: O(q log q) en tiempo y O(q + 200001) en memoria.
+
+C.cpp - Cuadrado magico
+  Backtracking, sin repetir digitos y con poda de sumas por fila,
+  columna y diagonales.
+  Maximo 9! asignaciones candidatas (sin considerar podas).
+
+Compilacion independiente:
+  g++ -std=c++17 -O2 A.cpp -o A
+  g++ -std=c++17 -O2 B.cpp -o B
+  g++ -std=c++17 -O2 C.cpp -o C
+
+Cada archivo tiene su propio main y se entrega por separado al juez.
+No se utilizan librerias externas.
